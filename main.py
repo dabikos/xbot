@@ -13,6 +13,7 @@ CHAT_ID = 706156303
 bot = Bot(token=TELEGRAM_TOKEN)
 
 # Инициализация переменных для хранения предыдущих значений
+global last_name, last_avatar
 last_name = None
 last_avatar = None
 
@@ -38,12 +39,11 @@ def send_telegram_message(message):
 # Главный цикл
 while True:
     try:
-        # Объявляем глобальными до использования
-        global last_name, last_avatar
-        
         # Получаем данные о профиле
         name, avatar = get_twitter_profile(TWITTER_USERNAME)
 
+        # Применяем глобальные переменные
+        global last_name, last_avatar
         changed = False
         msg = f"Изменения у @{TWITTER_USERNAME}:\n"
 
