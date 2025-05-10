@@ -58,4 +58,4 @@ while True:
     except Exception as e:
         print("Ошибка:", e)
 
-    time.sleep(CHECK_INTERVAL_
+    time.sleep(CHECK_INTERVAL)
