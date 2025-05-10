@@ -38,7 +38,7 @@ def send_telegram_message(message):
 # Главный цикл
 while True:
     try:
-        # Применяем глобальные переменные только здесь
+        # Переменные last_name и last_avatar объявляем глобальными
         global last_name, last_avatar
 
         # Получаем данные о профиле
