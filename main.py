@@ -38,9 +38,9 @@ def send_telegram_message(message):
 # Главный цикл
 while True:
     try:
-        # Переменные last_name и last_avatar объявляем глобальными
+        # Объявляем глобальными до использования
         global last_name, last_avatar
-
+        
         # Получаем данные о профиле
         name, avatar = get_twitter_profile(TWITTER_USERNAME)
 
