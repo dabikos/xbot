@@ -38,11 +38,12 @@ def send_telegram_message(message):
 # Главный цикл
 while True:
     try:
+        # Применяем глобальные переменные только здесь
+        global last_name, last_avatar
+
         # Получаем данные о профиле
         name, avatar = get_twitter_profile(TWITTER_USERNAME)
 
-        # Применяем глобальные переменные только здесь
-        global last_name, last_avatar
         changed = False
         msg = f"Изменения у @{TWITTER_USERNAME}:\n"
 
@@ -67,4 +68,3 @@ while True:
 
     # Пауза перед следующей проверкой
     time.sleep(CHECK_INTERVAL)
-# небольшой комментарий, чтобы проверить изменения
