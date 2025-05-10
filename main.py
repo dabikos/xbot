@@ -12,7 +12,7 @@ CHAT_ID = 706156303
 # Инициализация Telegram-бота
 bot = Bot(token=TELEGRAM_TOKEN)
 
-# Предыдущие значения
+# Инициализация переменных для хранения предыдущих значений
 last_name = None
 last_avatar = None
 
@@ -35,10 +35,13 @@ def get_twitter_profile(username):
 def send_telegram_message(message):
     bot.send_message(chat_id=CHAT_ID, text=message)
 
+# Главный цикл
 while True:
     try:
+        # Получаем данные о профиле
         name, avatar = get_twitter_profile(TWITTER_USERNAME)
 
+        # Применяем глобальные переменные только здесь
         global last_name, last_avatar
         changed = False
         msg = f"Изменения у @{TWITTER_USERNAME}:\n"
@@ -51,13 +54,17 @@ while True:
             msg += f"Аватар изменён.\nСтарый: {last_avatar}\nНовый: {avatar}\n"
             changed = True
 
+        # Отправляем сообщение, если есть изменения
         if changed:
             send_telegram_message(msg)
 
+        # Обновляем последние значения
         last_name = name
         last_avatar = avatar
 
     except Exception as e:
         print("Ошибка:", e)
 
+    # Пауза перед следующей проверкой
     time.sleep(CHECK_INTERVAL)
+# небольшой комментарий, чтобы проверить изменения
