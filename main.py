@@ -5,7 +5,7 @@ import time
 
 # Настройки
 TWITTER_USERNAME = "macallanft"
-CHECK_INTERVAL = 300  # Проверка каждые 5 минут
+CHECK_INTERVAL = 5  # Проверка каждые 5 секунд
 TELEGRAM_TOKEN = "7892885574:AAEGIl4IGOTyATTGA6_JRMl-OKa2xd68MBk"
 CHAT_ID = 706156303
 
