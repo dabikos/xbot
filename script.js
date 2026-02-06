@@ -457,7 +457,7 @@ function initScrollReveal() {
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('slide-in-left');
+                entry.target.classList.add('slide-in-from-left');
                 revealObserver.unobserve(entry.target);
             }
         });
@@ -467,7 +467,7 @@ function initScrollReveal() {
 }
 
 // Animated Counter with easing
-function animateValue(element, start, end, duration, suffix = '') {
+function animateValue(element, start, end, duration, suffix = '', locale = 'ru-RU') {
     const range = end - start;
     const startTime = performance.now();
     
@@ -481,7 +481,7 @@ function animateValue(element, start, end, duration, suffix = '') {
         const easedProgress = easeOutQuart(progress);
         const current = Math.floor(start + range * easedProgress);
         
-        element.textContent = current.toLocaleString('ru-RU') + suffix;
+        element.textContent = current.toLocaleString(locale) + suffix;
         
         if (progress < 1) {
             requestAnimationFrame(update);
