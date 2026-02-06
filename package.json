@@ -1,0 +1,31 @@
+{
+  "name": "obrazovanie",
+  "version": "1.0.0",
+  "description": "Современная платформа онлайн обучения - адаптивный веб-сайт с красивым дизайном",
+  "main": "index.html",
+  "keywords": [
+    "education",
+    "online-learning",
+    "courses",
+    "website",
+    "landing-page",
+    "responsive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/obrazovanie.git"
+  },
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
