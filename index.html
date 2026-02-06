@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Современная платформа онлайн обучения. Изучайте новые навыки, получайте знания от лучших преподавателей. 200+ курсов, 50,000+ студентов.">
+    <meta name="keywords" content="онлайн обучение, курсы, образование, веб-разработка, дизайн, программирование">
+    <meta name="author" content="Образование">
+    <meta property="og:title" content="Образование - Платформа онлайн обучения">
+    <meta property="og:description" content="Раскройте свой потенциал с лучшей платформой онлайн обучения">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#6366F1">
+    <title>Образование - Платформа онлайн обучения</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations-advanced.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#6366F1"/>
+                        <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="white"/>
+                        <path d="M20 20L16 18V22L20 24V20Z" fill="#6366F1"/>
+                    </svg>
+                    <span>Образование</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about">О платформе</a></li>
+                    <li><a href="#courses">Курсы</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="btn-secondary">Войти</a>
+                    <a href="#" class="btn-primary">Регистрация</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">🎓 Онлайн обучение нового поколения</span>
+                    <h1 class="hero-title">
+                        Раскройте свой потенциал с 
+                        <span class="gradient-text">Образованием</span>
+                    </h1>
+                    <p class="hero-description">
+                        Изучайте новые навыки, получайте знания от лучших преподавателей 
+                        и достигайте своих целей с нашей современной платформой онлайн обучения.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#courses" class="btn-primary btn-large">Начать обучение</a>
+                        <a href="#about" class="btn-secondary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 7L13 10L8 13V7Z" fill="currentColor"/>
+                            </svg>
+                            Смотреть видео
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">50,000+</div>
+                            <div class="stat-label">Студентов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Курсов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Удовлетворенность</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-card card-1">
+                        <div class="card-icon">📚</div>
+                        <div class="card-content">
+                            <div class="card-title">Интерактивные уроки</div>
+                            <div class="card-description">Учитесь в своем темпе</div>
+                        </div>
+                    </div>
+                    <div class="hero-card card-2">
+                        <div class="card-icon">🏆</div>
+                        <div class="card-content">
+                            <div class="card-title">Сертификаты</div>
+                            <div class="card-description">Подтвердите навыки</div>
+                        </div>
+                    </div>
+                    <div class="hero-card card-3">
+                        <div class="card-icon">👥</div>
+                        <div class="card-content">
+                            <div class="card-title">Сообщество</div>
+                            <div class="card-description">Учитесь вместе</div>
+                        </div>
+                    </div>
+                    <div class="hero-illustration">
+                        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="250" cy="250" r="200" fill="url(#gradient1)" opacity="0.1"/>
+                            <circle cx="250" cy="250" r="150" fill="url(#gradient2)" opacity="0.2"/>
+                            <circle cx="250" cy="250" r="100" fill="#6366F1" opacity="0.3"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="250" y1="50" x2="250" y2="450">
+                                    <stop offset="0%" stop-color="#6366F1"/>
+                                    <stop offset="100%" stop-color="#8B5CF6"/>
+                                </linearGradient>
+                                <linearGradient id="gradient2" x1="250" y1="100" x2="250" y2="400">
+                                    <stop offset="0%" stop-color="#8B5CF6"/>
+                                    <stop offset="100%" stop-color="#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">О платформе</span>
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-description">
+                    Мы создаем лучшие условия для онлайн обучения
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#6366F1" opacity="0.1"/>
+                            <path d="M24 14L32 18V28L24 32L16 28V18L24 14Z" stroke="#6366F1" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Качественный контент</h3>
+                    <p>Профессионально подготовленные материалы от экспертов в своей области</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#8B5CF6" opacity="0.1"/>
+                            <circle cx="24" cy="24" r="8" stroke="#8B5CF6" stroke-width="2"/>
+                            <path d="M24 16V24L28 28" stroke="#8B5CF6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Гибкий график</h3>
+                    <p>Учитесь в удобное время и в комфортном темпе</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#EC4899" opacity="0.1"/>
+                            <path d="M24 12L28 20H20L24 12Z" fill="#EC4899"/>
+                            <rect x="18" y="22" width="12" height="14" rx="2" stroke="#EC4899" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Сертификация</h3>
+                    <p>Получайте признанные сертификаты после завершения курсов</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="#10B981" opacity="0.1"/>
+                            <circle cx="20" cy="20" r="6" stroke="#10B981" stroke-width="2"/>
+                            <circle cx="30" cy="28" r="6" stroke="#10B981" stroke-width="2"/>
+                            <path d="M24 22L26 26" stroke="#10B981" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Поддержка</h3>
+                    <p>Круглосуточная помощь студентам и менторство</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section courses-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Курсы</span>
+                <h2 class="section-title">Популярные направления</h2>
+                <p class="section-description">
+                    Выберите направление, которое вам интересно
+                </p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Разработка</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Веб-разработка</h3>
+                        <p>Изучите HTML, CSS, JavaScript и создавайте современные веб-приложения</p>
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 40 часов</span>
+                            <span class="course-students">👥 5,240 студентов</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">15,000₽</span>
+                                <span class="price-new">9,990₽</span>
+                            </div>
+                            <a href="#" class="btn-primary">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Дизайн</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>UI/UX Дизайн</h3>
+                        <p>Создавайте красивые и функциональные интерфейсы для веб и мобильных приложений</p>
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 35 часов</span>
+                            <span class="course-students">👥 3,890 студентов</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">12,000₽</span>
+                                <span class="price-new">7,990₽</span>
+                            </div>
+                            <a href="#" class="btn-primary">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Данные</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science</h3>
+                        <p>Анализируйте данные, создавайте модели машинного обучения и принимайте решения</p>
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 50 часов</span>
+                            <span class="course-students">👥 4,120 студентов</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">18,000₽</span>
+                                <span class="price-new">12,990₽</span>
+                            </div>
+                            <a href="#" class="btn-primary">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Маркетинг</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Маркетинг</h3>
+                        <p>Освойте инструменты продвижения в интернете и увеличивайте продажи</p>
+                        <div class="course-meta">
+                            <span class="course-duration">⏱ 30 часов</span>
+                            <span class="course-students">👥 6,540 студентов</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">10,000₽</span>
+                                <span class="price-new">6,990₽</span>
+                            </div>
+                            <a href="#" class="btn-primary">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-cta">
+                <a href="#" class="btn-secondary btn-large">Посмотреть все курсы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text">
+                    <span class="section-badge">Преимущества</span>
+                    <h2 class="section-title">Обучение, которое работает</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Интерактивные уроки</h4>
+                                <p>Практикуйтесь прямо во время обучения с нашими интерактивными упражнениями</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Проекты из реальной жизни</h4>
+                                <p>Работайте над реальными проектами и пополняйте свое портфолио</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Менторская поддержка</h4>
+                                <p>Получайте обратную связь от опытных специалистов</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Доступ навсегда</h4>
+                                <p>Возвращайтесь к материалам в любое время</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-image">
+                    <div class="features-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="progress-card">
+                                    <div class="progress-header">
+                                        <span>Ваш прогресс</span>
+                                        <span class="progress-percent">78%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 78%"></div>
+                                    </div>
+                                </div>
+                                <div class="lesson-cards">
+                                    <div class="lesson-card completed">
+                                        <div class="lesson-status">✓</div>
+                                        <span>Урок 1: Введение</span>
+                                    </div>
+                                    <div class="lesson-card completed">
+                                        <div class="lesson-status">✓</div>
+                                        <span>Урок 2: Основы</span>
+                                    </div>
+                                    <div class="lesson-card active">
+                                        <div class="lesson-status">▶</div>
+                                        <span>Урок 3: Практика</span>
+                                    </div>
+                                    <div class="lesson-card">
+                                        <div class="lesson-status">○</div>
+                                        <span>Урок 4: Продвинутый</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Цены</span>
+                <h2 class="section-title">Выберите свой план</h2>
+                <p class="section-description">
+                    Гибкие тарифы для любых потребностей
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Базовый</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-amount">990</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="feature-check">✓</span> 10 курсов в месяц</li>
+                        <li><span class="feature-check">✓</span> Базовая поддержка</li>
+                        <li><span class="feature-check">✓</span> Сертификаты</li>
+                        <li><span class="feature-disabled">×</span> Менторство</li>
+                        <li><span class="feature-disabled">×</span> Проекты</li>
+                    </ul>
+                    <a href="#" class="btn-secondary btn-large">Выбрать план</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Популярный</div>
+                    <div class="pricing-header">
+                        <h3>Профессионал</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-amount">1,990</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="feature-check">✓</span> Неограниченные курсы</li>
+                        <li><span class="feature-check">✓</span> Приоритетная поддержка</li>
+                        <li><span class="feature-check">✓</span> Сертификаты</li>
+                        <li><span class="feature-check">✓</span> Менторство</li>
+                        <li><span class="feature-check">✓</span> 5 проектов</li>
+                    </ul>
+                    <a href="#" class="btn-primary btn-large">Выбрать план</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Корпоративный</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">₽</span>
+                            <span class="price-amount">4,990</span>
+                            <span class="price-period">/месяц</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="feature-check">✓</span> Все курсы платформы</li>
+                        <li><span class="feature-check">✓</span> Личный менеджер</li>
+                        <li><span class="feature-check">✓</span> Сертификаты</li>
+                        <li><span class="feature-check">✓</span> Персональное менторство</li>
+                        <li><span class="feature-check">✓</span> Неограниченные проекты</li>
+                    </ul>
+                    <a href="#" class="btn-secondary btn-large">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-badge">Контакты</span>
+                    <h2 class="section-title">Готовы начать обучение?</h2>
+                    <p class="section-description">
+                        Оставьте заявку, и мы свяжемся с вами в ближайшее время
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@obrazovanie.ru</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <div class="contact-label">Телефон</div>
+                                <div class="contact-value">+7 (495) 123-45-67</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <div class="contact-label">Адрес</div>
+                                <div class="contact-value">Москва, ул. Примерная, 123</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Расскажите о ваших целях"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-large">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#6366F1"/>
+                            <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="white"/>
+                            <path d="M20 20L16 18V22L20 24V20Z" fill="#6366F1"/>
+                        </svg>
+                        <span>Образование</span>
+                    </div>
+                    <p class="footer-description">
+                        Современная платформа онлайн обучения для развития ваших навыков и достижения целей.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="VK">VK</a>
+                        <a href="#" aria-label="Telegram">TG</a>
+                        <a href="#" aria-label="YouTube">YT</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Платформа</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#pricing">Цены</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Правовая информация</h4>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Оплата и возврат</a></li>
+                        <li><a href="#">Лицензия</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Образование. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
